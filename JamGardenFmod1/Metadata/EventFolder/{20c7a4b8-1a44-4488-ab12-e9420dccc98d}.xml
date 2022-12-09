@@ -5,7 +5,7 @@
 			<value>Enemy NPC FX</value>
 		</property>
 		<relationship name="folder">
-			<destination>{cde5f9b0-a800-4fe9-8af5-d1f25fe85d84}</destination>
+			<destination>{43091f68-9a18-4676-a3b9-c7e42938e37f}</destination>
 		</relationship>
 	</object>
 </objects>
