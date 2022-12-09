@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{64aff3de-bd99-4023-a86c-0d92cfd5068b}">
+		<property name="assetPath">
+			<value>SampleLine001ShiverTimbers.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.5466875</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b6343af7-dda1-4cdc-a85d-f3f99fea7e29}</destination>
+		</relationship>
+	</object>
+</objects>
