@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{20c7a4b8-1a44-4488-ab12-e9420dccc98d}">
+		<property name="name">
+			<value>Enemy NPC FX</value>
+		</property>
+		<relationship name="folder">
+			<destination>{cde5f9b0-a800-4fe9-8af5-d1f25fe85d84}</destination>
+		</relationship>
+	</object>
+</objects>

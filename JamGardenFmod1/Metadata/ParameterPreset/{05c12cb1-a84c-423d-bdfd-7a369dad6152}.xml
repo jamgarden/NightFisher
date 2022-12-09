@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{05c12cb1-a84c-423d-bdfd-7a369dad6152}">
+		<property name="name">
+			<value>FMODYarnDialogParameter</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ff0b88f2-a504-4ba3-8c64-c71aa9c39316}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{884d8bc1-c652-4d24-85c6-6c1f2cbb02b1}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{884d8bc1-c652-4d24-85c6-6c1f2cbb02b1}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>51</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>line001</value>
+			<value>line002</value>
+			<value>line003</value>
+			<value>line004</value>
+			<value>line005</value>
+			<value>line006</value>
+			<value>line007</value>
+			<value>line008</value>
+			<value>line009</value>
+			<value>line010</value>
+			<value>line011</value>
+			<value>line012</value>
+			<value>line013</value>
+			<value>line014</value>
+			<value>line015</value>
+			<value>line016</value>
+			<value>line017</value>
+			<value>line018</value>
+			<value>line019</value>
+			<value>line020</value>
+			<value>line021</value>
+			<value>line022</value>
+			<value>line023</value>
+			<value>line024</value>
+			<value>line025</value>
+			<value>line026</value>
+			<value>line027</value>
+			<value>line028</value>
+			<value>line029</value>
+			<value>line030</value>
+			<value>line031</value>
+			<value>line032</value>
+			<value>line033</value>
+			<value>line034</value>
+			<value>line035</value>
+			<value>line036</value>
+			<value>line037</value>
+			<value>line038</value>
+			<value>line039</value>
+			<value>line040</value>
+			<value>line041</value>
+			<value>line042</value>
+			<value>line043</value>
+			<value>line044</value>
+			<value>line045</value>
+			<value>line046</value>
+			<value>line047</value>
+			<value>line048</value>
+			<value>line049</value>
+			<value>line050</value>
+			<value>line051</value>
+		</property>
+		<property name="isHeld">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
