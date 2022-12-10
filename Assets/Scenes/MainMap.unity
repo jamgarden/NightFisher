@@ -287,13 +287,13 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -94068486
-      Data2: 1135598824
-      Data3: 1636983204
-      Data4: 432778008
-    Path: event:/Test Sounds/Test FX/UnlockSound
+      Data1: 876541825
+      Data2: 1238369003
+      Data3: 985474695
+      Data4: -180357393
+    Path: event:/Player FX/Abilities/SFX_Player_Abilities_Counter
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
