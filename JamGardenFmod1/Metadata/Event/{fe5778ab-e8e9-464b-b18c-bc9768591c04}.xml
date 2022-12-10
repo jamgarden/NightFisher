@@ -5,7 +5,7 @@
 			<value>YarnDialogSwitcher</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{75c9d6db-8665-42a0-b39b-c095287f3e6f}</destination>
@@ -41,6 +41,11 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{03a85d1a-8a4c-43ba-a3ba-b48c80ce78ff}">
+		<relationship name="modules">
+			<destination>{9e546802-b868-435c-8a8b-2695affc60ec}</destination>
+			<destination>{06fa5199-9aee-41d7-8801-1ada630cf27a}</destination>
+			<destination>{ce74d68a-8033-41b4-809c-f2bf72a0dedd}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{94042f71-c90b-41f1-97db-d94a19ebfa6b}</destination>
 		</relationship>
@@ -53,7 +58,7 @@
 			<destination>{cda65fc3-97a3-4cd8-9a31-cf00c1d7360e}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{950dd02d-6f14-493e-aff1-7a0891c73133}</destination>
+			<destination>{0cde04f3-b7ed-47ca-bc96-e733c38983f8}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{8cd4eb6b-ff3e-4690-909d-17baab280ee4}" />
@@ -64,6 +69,11 @@
 		</property>
 	</object>
 	<object class="ParameterProxy" id="{ef321f29-092e-4f0b-92d7-61dad8ee0365}">
+		<relationship name="modules">
+			<destination>{9e546802-b868-435c-8a8b-2695affc60ec}</destination>
+			<destination>{06fa5199-9aee-41d7-8801-1ada630cf27a}</destination>
+			<destination>{ce74d68a-8033-41b4-809c-f2bf72a0dedd}</destination>
+		</relationship>
 		<relationship name="preset">
 			<destination>{884d8bc1-c652-4d24-85c6-6c1f2cbb02b1}</destination>
 		</relationship>
@@ -77,6 +87,27 @@
 		</relationship>
 		<relationship name="mixer">
 			<destination>{5c1298f1-751c-4327-b22d-3fc672c0aacc}</destination>
+		</relationship>
+	</object>
+	<object class="EventSound" id="{9e546802-b868-435c-8a8b-2695affc60ec}">
+		<relationship name="event">
+			<destination>{b00a28c5-7130-4594-896b-9c7ecec54617}</destination>
+		</relationship>
+	</object>
+	<object class="EventSound" id="{06fa5199-9aee-41d7-8801-1ada630cf27a}">
+		<property name="start">
+			<value>1</value>
+		</property>
+		<relationship name="event">
+			<destination>{77c27a15-64af-460f-b69a-04c819cfa1d8}</destination>
+		</relationship>
+	</object>
+	<object class="EventSound" id="{ce74d68a-8033-41b4-809c-f2bf72a0dedd}">
+		<property name="start">
+			<value>2</value>
+		</property>
+		<relationship name="event">
+			<destination>{15d8a318-4e8d-4016-aa68-17a305c71903}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{73f904d8-aad9-418c-bcdf-b9a42482ca4d}">
