@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 350115f32450e6d46a6a74b3b2b72189
+guid: 06f6924e98e308d4daf59aacdb098721
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: AlienCoral_Fingers
-    second: {fileID: 2100000, guid: 980acd0066138ea46be3f283dd4cc9a7, type: 2}
+      name: AlienRock
+    second: {fileID: 2100000, guid: 2e20690465f91c04d8265294c3db35da, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -52,7 +52,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
