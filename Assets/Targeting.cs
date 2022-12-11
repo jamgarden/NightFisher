@@ -9,8 +9,10 @@ public class Targeting : MonoBehaviour
     private float cooldown = 0;
     public bool targetAcquired = false;
 
-    [SerializeField]
+    
     public GameObject bullet;
+
+    [SerializeField]
     private Transform gun;
     private GameObject target;
 
@@ -19,7 +21,7 @@ public class Targeting : MonoBehaviour
     private string targetName = "PlayerCapsule";
     void Start()
     {
-        gun = GetComponentInChildren<Transform>();
+        // gun = GetComponentInChildren<Transform>();
     }
 
     private void OnTriggerEnter(Collider source)
@@ -32,7 +34,7 @@ public class Targeting : MonoBehaviour
             target = source.gameObject;
             Attack(target);
         }
-        //Instantiate(bullet, gun); // Might need to use world space
+        // Instantiate(bullet, gun); // Might need to use world space
     }
 
     public void Attack(GameObject target)
@@ -40,7 +42,8 @@ public class Targeting : MonoBehaviour
         // this is the logic that actually fires the gunnnnnn.
         this.transform.LookAt(target.transform, this.transform.up);
         Debug.Log("Bang");
-        GameObject bulletA = Instantiate(this.bullet, this.transform.position, this.transform.rotation) as GameObject; // Might need to use world space
+        GameObject bulletA = Instantiate(bullet, gun.position, this.transform.rotation) as GameObject; // Might need to use world space
+        bulletA.GetComponent<BulletMB>().updateTarget(target);
         // We need to spawn a thing in here
     }
 

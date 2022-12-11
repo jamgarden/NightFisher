@@ -113,6 +113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reload: 2
   targetAcquired: 0
+  bullet: {fileID: 6709607144451880145, guid: 1df3fa3bc82fca148b1fbe77752fc727, type: 3}
+  gun: {fileID: 1072503980920491507}
   targetName: PlayerCapsule
 --- !u!1 &8540931065368058025
 GameObject:
@@ -138,7 +140,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8540931065368058025}
   m_LocalRotation: {x: 0.7071068, y: -0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0, z: 0.292}
+  m_LocalPosition: {x: 0, y: -0, z: 1.109}
   m_LocalScale: {x: 1, y: 0.99999976, z: 0.99999976}
   m_ConstrainProportionsScale: 0
   m_Children: []
