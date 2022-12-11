@@ -9,6 +9,8 @@ public class BulletMB : MonoBehaviour
     [SerializeField]
     private float duration=7;
 
+    public int baseDamage = 1;
+
     [SerializeField]
     private float speed = 5;
 
@@ -73,7 +75,8 @@ public class BulletMB : MonoBehaviour
         if(other.name == intendedTarget.name)
         {
             Debug.Log("OUCH");
-            Destroy(this.gameObject); // Deal damage here.
+            Destroy(this.gameObject);
+            intendedTarget.GetComponent<PlayerCore>().Damage(baseDamage); // Deal damage here.
         }
     }
 
