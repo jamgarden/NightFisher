@@ -27,7 +27,7 @@ public class Targeting : MonoBehaviour
     private void OnTriggerEnter(Collider source)
     {
         Debug.Log(source.gameObject.name);
-        
+        this.gameObject.GetComponent<SphereCollider>().enabled = false;
         if(source.gameObject.name == targetName)
         {
             targetAcquired = true;
@@ -40,11 +40,20 @@ public class Targeting : MonoBehaviour
     public void Attack(GameObject target)
     {
         // this is the logic that actually fires the gunnnnnn.
-        this.transform.LookAt(target.transform, this.transform.up);
-        Debug.Log("Bang");
+        Transform[] targetArr = target.gameObject.GetComponentsInChildren<Transform>();
+        Transform correction = this.transform;
+        foreach (Transform item in targetArr)
+        {
+            if(item.name == "Capsule") // Ew, hardcoded name.  This code searches through the child components and target's the players center. 
+            {
+                correction = item.transform;
+            }
+
+        }
+
+        this.transform.LookAt(correction.position, this.transform.up);
         GameObject bulletA = Instantiate(bullet, gun.position, this.transform.rotation) as GameObject; // Might need to use world space
-        bulletA.GetComponent<BulletMB>().updateTarget(target);
-        // We need to spawn a thing in here
+        bulletA.GetComponent<BulletMB>().updateTarget(correction.gameObject);
     }
 
 

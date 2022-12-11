@@ -11,6 +11,9 @@ public class PlayerCore : MonoBehaviour
     public bool talkable = false;
     public string targetNode = "";
 
+    [SerializeField]
+    private PlayerState playerState;
+
     //public Movement moveControls;
     public GameObject dialogueHolder;
     DialogueRunner dialogueRunner;

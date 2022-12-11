@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2575213985617272331}
   - component: {fileID: 8579483684785261938}
   - component: {fileID: 499662054123595767}
+  - component: {fileID: 8868451544467071316}
   m_Layer: 0
   m_Name: Sentinel
   m_TagString: Untagged
@@ -116,6 +117,19 @@ MonoBehaviour:
   bullet: {fileID: 6709607144451880145, guid: 1df3fa3bc82fca148b1fbe77752fc727, type: 3}
   gun: {fileID: 1072503980920491507}
   targetName: PlayerCapsule
+--- !u!65 &8868451544467071316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4088145902827110366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.23621249, y: 0.22465156, z: 0.19110003}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8540931065368058025
 GameObject:
   m_ObjectHideFlags: 0

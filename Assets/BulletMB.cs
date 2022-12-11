@@ -12,8 +12,10 @@ public class BulletMB : MonoBehaviour
     [SerializeField]
     private float speed = 5;
 
-    private Rigidbody rb;
+    [SerializeField]
+    private bool reflected;
 
+    private Rigidbody rb;
 
     private void Start()
     {
@@ -27,23 +29,57 @@ public class BulletMB : MonoBehaviour
 
     private void Update()
     {
-        transform.LookAt(intendedTarget.transform);
-        duration -= Time.deltaTime;
-        rb.velocity = transform.forward * speed * Time.deltaTime;
-        if(duration < 0)
+            transform.LookAt(intendedTarget.transform);
+            duration -= Time.deltaTime;
+        if (reflected)
         {
-            Debug.Log("This should be going away");
-            Destroy(this.gameObject);
+            rb.velocity = transform.forward * -speed * Time.deltaTime;
+            if (duration < 0)
+            {
+                Debug.Log("This should be going away");
+                Destroy(this.gameObject);
+            }
+
         }
+        else
+        {
+            
+            rb.velocity = transform.forward * speed * Time.deltaTime;
+            if(duration < 0)
+            {
+                Debug.Log("This should be going away");
+                Destroy(this.gameObject);
+            }
+        }
+        
         
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        
+        switch (other.gameObject.layer)
+        {
+            case 8:
+                reflect();
+                break;
+            case 7:
+                Debug.Log("I hit a bogey");
+                Destroy(this.gameObject);
+                break;
+            default:
+                break;
+        }
         if(other.name == intendedTarget.name)
         {
             Debug.Log("OUCH");
             Destroy(this.gameObject); // Deal damage here.
         }
+    }
+
+    public void reflect()
+    {
+        reflected = true;
+        duration += 3;
     }
 }
