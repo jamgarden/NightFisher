@@ -3,7 +3,27 @@ guid: 7ffad64f83d60f2458553bd229380560
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AlienFlowerA
+    second: {fileID: 2100000, guid: 9af75821784cb8c4b8a03c6511cf2ea1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AlienFlowerB
+    second: {fileID: 2100000, guid: 6e38984a5eb2ce64f94732ac72c6ce7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AlienFlowerC
+    second: {fileID: 2100000, guid: b18a3ca5b399c2846833263be4cb1823, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AlienFlowerDark
+    second: {fileID: 2100000, guid: acd4fc8fffb3ad042adb12773f869363, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -42,8 +62,8 @@ ModelImporter:
     sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
