@@ -67,6 +67,7 @@ public class BulletMB : MonoBehaviour
                 break;
             case 7:
                 Debug.Log("I hit a bogey");
+                other.gameObject.GetComponent<EnemyCore>().Damage(baseDamage);
                 Destroy(this.gameObject);
                 break;
             default:
@@ -76,7 +77,7 @@ public class BulletMB : MonoBehaviour
         {
             Debug.Log("OUCH");
             Destroy(this.gameObject);
-            intendedTarget.GetComponent<PlayerCore>().Damage(baseDamage); // Deal damage here.
+            intendedTarget.GetComponentInParent<PlayerCore>().Damage(baseDamage); // Deal damage here.
         }
     }
 

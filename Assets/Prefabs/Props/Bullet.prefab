@@ -79,7 +79,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   intendedTarget: {fileID: 0}
   duration: 5
-  speed: 5000
+  baseDamage: 1
+  speed: 3000
+  reflected: 0
 --- !u!114 &8474258566582478229
 MonoBehaviour:
   m_ObjectHideFlags: 0
