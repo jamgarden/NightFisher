@@ -293,7 +293,7 @@ MonoBehaviour:
       Data4: -180357393
     Path: event:/Player FX/Abilities/SFX_Player_Abilities_Counter
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9468c5f457ace64f8d4df6d642b107f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoadEvent: 1
+  LoadEvent: 0
   UnloadEvent: 0
   Banks:
   - Master
