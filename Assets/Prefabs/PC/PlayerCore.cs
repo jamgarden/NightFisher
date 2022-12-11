@@ -39,7 +39,14 @@ public class PlayerCore : MonoBehaviour
     // For keeping track of things like health and other instance specific things.
     // Stat block here
 
-
+    public void Damage(int damage)
+    {
+        playerState.health--;
+        if(playerState.health < 1)
+        {
+            Die();
+        }
+    }
     // Public methods here
     public void Die()
     {
