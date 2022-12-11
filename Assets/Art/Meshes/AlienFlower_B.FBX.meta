@@ -3,7 +3,12 @@ guid: bb3ad48eb15c1304bb60c8b6fafd72e9
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AlienCoral_Fingers
+    second: {fileID: 2100000, guid: 980acd0066138ea46be3f283dd4cc9a7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
