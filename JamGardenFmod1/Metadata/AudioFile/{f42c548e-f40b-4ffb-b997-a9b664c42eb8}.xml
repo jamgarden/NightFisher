@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f42c548e-f40b-4ffb-b997-a9b664c42eb8}">
+		<property name="assetPath">
+			<value>James Assets/SFX/Objects/Scanner/SFX_Objects_Scanner_Located_01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.2567291666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b6343af7-dda1-4cdc-a85d-f3f99fea7e29}</destination>
+		</relationship>
+	</object>
+</objects>
