@@ -78,9 +78,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intendedTarget: {fileID: 0}
-  duration: 5
+  duration: 2
   baseDamage: 1
-  speed: 3000
+  speed: 1000
   reflected: 0
 --- !u!114 &8474258566582478229
 MonoBehaviour:

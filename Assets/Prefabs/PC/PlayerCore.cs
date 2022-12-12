@@ -23,6 +23,8 @@ public class PlayerCore : MonoBehaviour
     private void Start()
     {
 
+
+        playerState.health = playerState.maxHealth;
        // moveControls = GetComponent<Movement>();
         //attacker = GetComponent<PlayerAttack>();
         if (dialogueHolder != null)
@@ -50,6 +52,7 @@ public class PlayerCore : MonoBehaviour
     // Public methods here
     public void Die()
     {
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("GameOver"); // Whisks us directly to the game over screen.
     }
 
@@ -62,6 +65,7 @@ public class PlayerCore : MonoBehaviour
         {
             if (targetNode != "")
             {
+                Cursor.lockState = CursorLockMode.None;
                 dialogueRunner.Stop();
                 dialogueRunner.StartDialogue(targetNode);
                 //moveControls.canMove = false;
@@ -77,6 +81,11 @@ public class PlayerCore : MonoBehaviour
         {
             Debug.LogWarning("No Dialogue Runner to Start Talking");
         }
+    }
+
+    public void ReleaseCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void DoneInteracting()
