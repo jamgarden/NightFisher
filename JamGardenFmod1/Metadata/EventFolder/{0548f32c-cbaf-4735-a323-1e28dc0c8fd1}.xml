@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{0548f32c-cbaf-4735-a323-1e28dc0c8fd1}">
+		<property name="name">
+			<value>Mirror</value>
+		</property>
+		<relationship name="folder">
+			<destination>{45e2c944-b207-4feb-add5-7bf0f1c77c2f}</destination>
+		</relationship>
+	</object>
+</objects>
