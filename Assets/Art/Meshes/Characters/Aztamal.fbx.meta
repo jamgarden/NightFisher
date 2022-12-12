@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a38bc4d49c8697498e848e074b32f9b
+guid: 202ab0e94b490fa40878d160871e0165
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
@@ -7,13 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: FancyMirrorBase
-    second: {fileID: 2100000, guid: 006c41a6b427ef34ba81e01a98b83045, type: 2}
+      name: M_Aztamal
+    second: {fileID: 2100000, guid: becb37cc5fe58234c8324ab975c25509, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: FancyMirrorReflective
-    second: {fileID: 2100000, guid: 7d4daca381966de44895240413ad5042, type: 2}
+      name: M_Hero_Helmet
+    second: {fileID: 2100000, guid: 4d8ef607e2ed8e743b87184d9c5bc2b8, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -57,7 +57,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1

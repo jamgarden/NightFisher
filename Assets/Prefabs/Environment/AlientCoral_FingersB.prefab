@@ -1,0 +1,271 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &252584859972054177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 955575220356918567}
+  - component: {fileID: 1506102116332481148}
+  m_Layer: 0
+  m_Name: AlientCoral_FingersB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &955575220356918567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252584859972054177}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5207785146882936025}
+  - {fileID: 1928657234626639135}
+  - {fileID: 2182241255668703739}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &1506102116332481148
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252584859972054177}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.062140763, y: 0.45366636, z: -0.033176273}
+  m_Size: 0.90971357
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6345264163888871350}
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 759097699616657008}
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 1009875044086192788}
+  m_Enabled: 1
+--- !u!1001 &1856144545879197200
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 955575220356918567}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.007083378
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0012942123
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.057610307
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_Name
+      value: AlienCoral_FingersB (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+--- !u!23 &1009875044086192788 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+  m_PrefabInstance: {fileID: 1856144545879197200}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2182241255668703739 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+  m_PrefabInstance: {fileID: 1856144545879197200}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2110304711047713524
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 955575220356918567}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.007083378
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0012942123
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.057610307
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_Name
+      value: AlienCoral_FingersB (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+--- !u!23 &759097699616657008 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+  m_PrefabInstance: {fileID: 2110304711047713524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1928657234626639135 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+  m_PrefabInstance: {fileID: 2110304711047713524}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5750953249632824114
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 955575220356918567}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.007083378
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0012942123
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.057610307
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+      propertyPath: m_Name
+      value: AlienCoral_FingersB
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+--- !u!4 &5207785146882936025 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+  m_PrefabInstance: {fileID: 5750953249632824114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6345264163888871350 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 75367a9ea403b9a409247f9f53bb6b21, type: 3}
+  m_PrefabInstance: {fileID: 5750953249632824114}
+  m_PrefabAsset: {fileID: 0}
