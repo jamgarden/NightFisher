@@ -6,16 +6,12 @@ using UnityEngine.SceneManagement;
 public class Restart : MonoBehaviour
 {
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string target;
 
     // Update is called once per frame
     public void StartOver()
     {
         // This resets 
-        SceneManager.LoadScene("MainMap");
+        SceneManager.LoadScene(target);
     }
 }
