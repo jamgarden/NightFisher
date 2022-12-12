@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 499662054123595767}
   - component: {fileID: 8868451544467071316}
   - component: {fileID: 6855059370656789820}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sentinel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
