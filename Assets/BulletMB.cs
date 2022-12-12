@@ -35,6 +35,7 @@ public class BulletMB : MonoBehaviour
             duration -= Time.deltaTime;
         if (reflected)
         {
+
             rb.velocity = transform.forward * -speed * Time.deltaTime;
             if (duration < 0)
             {
@@ -63,9 +64,11 @@ public class BulletMB : MonoBehaviour
         switch (other.gameObject.layer)
         {
             case 8:
+                AudioManager.instance.PlayOneShot(FMODevents.instance.reflectShot, this.transform.position);
                 reflect();
                 break;
             case 7:
+                AudioManager.instance.PlayOneShot(FMODevents.instance.sentinelDamaged, this.transform.position);
                 Debug.Log("I hit a bogey");
                 other.gameObject.GetComponent<EnemyCore>().Damage(baseDamage);
                 Destroy(this.gameObject);
@@ -85,5 +88,6 @@ public class BulletMB : MonoBehaviour
     {
         reflected = true;
         duration += 3;
+        
     }
 }

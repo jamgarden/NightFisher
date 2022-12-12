@@ -6934,6 +6934,20 @@ MonoBehaviour:
       Data3: -1562345806
       Data4: -486406040
     Path: event:/FARTReal_Outdoor Close Up Rip 01_JATH_PLIB_Rode NTG 4 Plus
+  <reflectShot>k__BackingField:
+    Guid:
+      Data1: 876541825
+      Data2: 1238369003
+      Data3: 985474695
+      Data4: -180357393
+    Path: event:/Player FX/Abilities/SFX_Player_Abilities_Counter
+  <sentinelDamaged>k__BackingField:
+    Guid:
+      Data1: -1501314449
+      Data2: 1100621497
+      Data3: 37464711
+      Data4: -637418620
+    Path: event:/In Game 2D Events/SFX_Events_PlayerHitEnemy
 --- !u!1001 &879122027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13435,15 +13449,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3604934626033223136, guid: b7ec44b5359c45744bbd1965e8a4cf2a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 116.43
+      value: 480.23
       objectReference: {fileID: 0}
     - target: {fileID: 3604934626033223136, guid: b7ec44b5359c45744bbd1965e8a4cf2a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.79
+      value: 43.84
       objectReference: {fileID: 0}
     - target: {fileID: 3604934626033223136, guid: b7ec44b5359c45744bbd1965e8a4cf2a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 61.86
+      value: 591.78
       objectReference: {fileID: 0}
     - target: {fileID: 3604934626033223136, guid: b7ec44b5359c45744bbd1965e8a4cf2a, type: 3}
       propertyPath: m_LocalRotation.w
