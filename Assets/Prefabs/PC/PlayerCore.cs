@@ -14,6 +14,7 @@ public class PlayerCore : MonoBehaviour
     [SerializeField]
     private PlayerState playerState;
 
+    private StarterAssets.StarterAssetsInputs controls;
     //public Movement moveControls;
     public GameObject dialogueHolder;
     DialogueRunner dialogueRunner;
@@ -23,7 +24,7 @@ public class PlayerCore : MonoBehaviour
     private void Start()
     {
 
-
+        controls = GetComponent<StarterAssets.StarterAssetsInputs>();
         playerState.health = playerState.maxHealth;
        // moveControls = GetComponent<Movement>();
         //attacker = GetComponent<PlayerAttack>();
@@ -65,6 +66,7 @@ public class PlayerCore : MonoBehaviour
         {
             if (targetNode != "")
             {
+                controls.StopAllCoroutines();
                 Cursor.lockState = CursorLockMode.None;
                 dialogueRunner.Stop();
                 dialogueRunner.StartDialogue(targetNode);
@@ -85,6 +87,8 @@ public class PlayerCore : MonoBehaviour
 
     public void ReleaseCursor()
     {
+        //Input
+        
         Cursor.lockState = CursorLockMode.Locked;
     }
 

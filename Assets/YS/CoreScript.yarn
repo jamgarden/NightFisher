@@ -4,9 +4,9 @@ tags:
 //Grumbo: The might Grumbo lives again.
 <<enter_room PlayerCapsule GameOver>>
 ===
-title: MicCheck2
+title: WinGame
 ---
-Grumbo: I'm stuck, and can't leave dialogue.
+<<enter_room PlayerCapsule GameWin>>
 ===
 title: ActivatePortal
 ---
