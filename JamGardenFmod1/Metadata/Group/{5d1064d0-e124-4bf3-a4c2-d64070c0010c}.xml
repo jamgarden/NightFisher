@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="MixerGroup" id="{5d1064d0-e124-4bf3-a4c2-d64070c0010c}">
+		<property name="volume">
+			<value>-1</value>
+		</property>
 		<property name="name">
 			<value>Music</value>
 		</property>
@@ -17,8 +20,20 @@
 	<object class="MixerBusEffectChain" id="{a8c0d7ab-5dd2-4d26-a2c2-d337f9e7c0ee}">
 		<relationship name="effects">
 			<destination>{12aaabc3-123a-4aba-bebd-ac8136969560}</destination>
+			<destination>{b940dada-5a5b-4873-916a-1270d3661072}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c569463a-317e-4466-bfa7-b2964ce1e9d5}" />
 	<object class="MixerBusFader" id="{12aaabc3-123a-4aba-bebd-ac8136969560}" />
+	<object class="MultibandEqEffect" id="{b940dada-5a5b-4873-916a-1270d3661072}">
+		<property name="filterTypeB">
+			<value>8</value>
+		</property>
+		<property name="frequencyA">
+			<value>7647.40625</value>
+		</property>
+		<property name="qualityA">
+			<value>2.10344815</value>
+		</property>
+	</object>
 </objects>
