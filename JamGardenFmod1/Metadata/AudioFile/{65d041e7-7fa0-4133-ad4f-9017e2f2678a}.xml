@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{65d041e7-7fa0-4133-ad4f-9017e2f2678a}">
+		<property name="assetPath">
+			<value>Matthew Assets/LandingSound1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.375</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b6343af7-dda1-4cdc-a85d-f3f99fea7e29}</destination>
+		</relationship>
+	</object>
+</objects>
