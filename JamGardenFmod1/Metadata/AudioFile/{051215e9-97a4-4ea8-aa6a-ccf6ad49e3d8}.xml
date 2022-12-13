@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{051215e9-97a4-4ea8-aa6a-ccf6ad49e3d8}">
+		<property name="assetPath">
+			<value>Matthew Assets/Shield_Activate.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.2553125000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b6343af7-dda1-4cdc-a85d-f3f99fea7e29}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -40,6 +40,7 @@ public class BubbleShield : MonoBehaviour
     {
         if (!shielding)
         {
+            AudioManager.instance.PlayOneShot(FMODevents.instance.bubbleShield, this.transform.position);
             shield.SetActive(true);
             shielding = true;
         }

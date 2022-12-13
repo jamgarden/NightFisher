@@ -5,17 +5,19 @@ using FMODUnity;
 
 public class FMODevents : MonoBehaviour
 {
-    [field: Header("Player SFX")]  
+    [field: Header("World Sounds")]
+  
+    [field: SerializeField] public EventReference ForestAmbience { get; private set; }
+    [field: SerializeField] public EventReference ForestMusic { get; private set; }
+    [field: Header("Player SFX")]
+    [field: SerializeField] public EventReference bubbleShield { get; private set; }  
     [field: SerializeField] public EventReference playerFootsteps { get; private set; }
     [field: Header("Sentinel SFX")]  
-    [field: SerializeField] public EventReference sentinalDeath { get; private set; }
-    [field: Header("ReflectShot")]  
-    [field: SerializeField] public EventReference reflectShot { get; private set; }
-    [field: Header("Sentinel Damaged")]  
+    [field: SerializeField] public EventReference sentinalDeath { get; private set; }  
+    [field: SerializeField] public EventReference reflectShot { get; private set; }  
     [field: SerializeField] public EventReference sentinelDamaged { get; private set; }
-    [field: Header("Mirror Break")]
+    [field: Header("Object Sounds")]
     [field:SerializeField] public EventReference mirrorBreak { get; private set;}
-    [field: Header("Glass Fly")]
     [field:SerializeField] public EventReference glassFly { get; private set;}
     public static FMODevents instance { get; private set; }
 
