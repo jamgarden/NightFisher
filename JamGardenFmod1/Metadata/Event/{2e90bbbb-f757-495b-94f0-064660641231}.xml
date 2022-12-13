@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{2e90bbbb-f757-495b-94f0-064660641231}">
 		<property name="name">
-			<value>SF_Objects_Mirror_Hum</value>
+			<value>SFX_Objects_Mirror_Hum</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
