@@ -297,7 +297,7 @@ MonoBehaviour:
       Value: 0
       HasValue: 0
     SampleRate:
-      Value: 48000
+      Value: 44100
       HasValue: 1
     BuildDirectory:
       Value: 
@@ -487,11 +487,11 @@ MonoBehaviour:
   sourceProjectPath: JamGardenFmod1/JamGardenFmod1.fspro
   sourceBankPath: JamGardenFmod1/Build
   sourceBankPathUnformatted: 
-  BankRefreshCooldown: 5
+  BankRefreshCooldown: 1
   ShowBankRefreshWindow: 1
   AutomaticEventLoading: 1
   BankLoadType: 0
-  AutomaticSampleLoading: 0
+  AutomaticSampleLoading: 1
   EncryptionKey: 
   ImportType: 0
   TargetAssetPath: FMODBanks
@@ -686,8 +686,8 @@ MonoBehaviour:
   active: 1
   Properties:
     LiveUpdate:
-      Value: 0
-      HasValue: 0
+      Value: 1
+      HasValue: 1
     LiveUpdatePort:
       Value: 9264
       HasValue: 1
@@ -698,8 +698,8 @@ MonoBehaviour:
       Value: 0
       HasValue: 0
     SampleRate:
-      Value: 0
-      HasValue: 0
+      Value: 44100
+      HasValue: 1
     BuildDirectory:
       Value: 
       HasValue: 0
@@ -713,11 +713,11 @@ MonoBehaviour:
       Value: 0
       HasValue: 0
     DSPBufferLength:
-      Value: 0
-      HasValue: 0
+      Value: 2048
+      HasValue: 1
     DSPBufferCount:
-      Value: 0
-      HasValue: 0
+      Value: 4
+      HasValue: 1
     Plugins:
       Value: []
       HasValue: 1

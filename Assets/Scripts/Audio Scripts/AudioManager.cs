@@ -26,7 +26,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        InitializeAmbience(FMODevents.instance.ForestAmbience);
+        //InitializeAmbience(FMODevents.instance.ForestAmbience);
         InitializeMusic(FMODevents.instance.ForestMusic);
     }
 
