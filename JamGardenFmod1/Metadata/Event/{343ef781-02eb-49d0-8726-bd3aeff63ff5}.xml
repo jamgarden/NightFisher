@@ -80,6 +80,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{0d6b2cb1-df09-4216-81ee-65287f9c959a}">
+		<property name="volume">
+			<value>5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{50370b58-1a39-4c1a-ac79-1b727a53f363}</destination>
 		</relationship>
@@ -120,7 +123,9 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{50370b58-1a39-4c1a-ac79-1b727a53f363}">
 		<relationship name="effects">
+			<destination>{c6d2440f-01f7-4cf5-8162-a8f0c10d100e}</destination>
 			<destination>{ee1557c9-fd52-4098-99d3-51e737a837a5}</destination>
+			<destination>{84fbba6a-5bb4-45e2-a882-15174ea8f236}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8835d38e-217a-4c99-85ec-2c9e2dc2d40b}" />
@@ -143,7 +148,26 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{343b37d2-cbc8-4026-aa67-57c3c6bad0a2}" />
+	<object class="ThreeEQEffect" id="{c6d2440f-01f7-4cf5-8162-a8f0c10d100e}">
+		<property name="lowGain">
+			<value>4</value>
+		</property>
+		<property name="midGain">
+			<value>-1</value>
+		</property>
+		<property name="highGain">
+			<value>4.5</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{ee1557c9-fd52-4098-99d3-51e737a837a5}" />
+	<object class="MixerSend" id="{84fbba6a-5bb4-45e2-a882-15174ea8f236}">
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{9f1e49fc-c769-4497-bfc9-35ddc9139381}</destination>
+		</relationship>
+	</object>
 	<object class="RandomizerModulator" id="{68382ddf-727f-497b-83ab-943f084eb6f6}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>

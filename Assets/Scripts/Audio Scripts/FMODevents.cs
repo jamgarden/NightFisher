@@ -13,7 +13,7 @@ public class FMODevents : MonoBehaviour
     [field: SerializeField] public EventReference bubbleShield { get; private set; }  
     [field: SerializeField] public EventReference playerFootsteps { get; private set; }
     [field: Header("Sentinel SFX")]  
-    [field: SerializeField] public EventReference sentinalDeath { get; private set; }  
+    [field: SerializeField] public EventReference sentinelDeath { get; private set; }  
     [field: SerializeField] public EventReference reflectShot { get; private set; }  
     [field: SerializeField] public EventReference sentinelDamaged { get; private set; }
     [field: Header("Object Sounds")]

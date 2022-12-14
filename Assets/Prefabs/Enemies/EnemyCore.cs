@@ -14,7 +14,7 @@ public class EnemyCore : MonoBehaviour
         health -= incomingDamage;
         if(health < 1)
         {
-            AudioManager.instance.PlayOneShot(FMODevents.instance.sentinalDeath, this.transform.position);
+            AudioManager.instance.PlayOneShot(FMODevents.instance.sentinelDeath, this.transform.position);
             Destroy(this.gameObject);
         }
     }
