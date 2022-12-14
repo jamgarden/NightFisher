@@ -6927,13 +6927,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e0c07085fe903c42be266bd25b9d7ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <ForestAmbience>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <ForestMusic>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <bubbleShield>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <playerFootsteps>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   <sentinalDeath>k__BackingField:
     Guid:
       Data1: -182472827
       Data2: 1099996348
       Data3: -1562345806
       Data4: -486406040
-    Path: event:/FARTReal_Outdoor Close Up Rip 01_JATH_PLIB_Rode NTG 4 Plus
+    Path: event:/Test Sounds/Test FX/FARTReal_Outdoor Close Up Rip 01_JATH_PLIB_Rode
+      NTG 4 Plus
+  <reflectShot>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <sentinelDamaged>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <mirrorBreak>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <glassFly>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1001 &879122027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13420,6 +13477,10 @@ PrefabInstance:
     - target: {fileID: 3570384495124134197, guid: b7ec44b5359c45744bbd1965e8a4cf2a, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570384495124134197, guid: b7ec44b5359c45744bbd1965e8a4cf2a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3570384495124134197, guid: b7ec44b5359c45744bbd1965e8a4cf2a, type: 3}
       propertyPath: m_LocalRotation.y

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -160,7 +160,8 @@ MonoBehaviour:
       Data2: 1099996348
       Data3: -1562345806
       Data4: -486406040
-    Path: event:/FARTReal_Outdoor Close Up Rip 01_JATH_PLIB_Rode NTG 4 Plus
+    Path: event:/Test Sounds/Test FX/FARTReal_Outdoor Close Up Rip 01_JATH_PLIB_Rode
+      NTG 4 Plus
   Event: 
   PlayEvent: 1
   StopEvent: 0

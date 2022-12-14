@@ -59,7 +59,7 @@
 			<destination>{636e88fc-3203-4345-914b-3dd656c95d6f}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{950dd02d-6f14-493e-aff1-7a0891c73133}</destination>
+			<destination>{a1dc7cde-4d08-4204-9626-487ac526ec04}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{2c2ba2b4-8d63-4d71-a9de-74cc49674d32}" />
@@ -80,6 +80,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{e70eb380-78c9-432c-bb43-bfd86337d535}">
+		<property name="volume">
+			<value>5.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{885a1f45-ab91-4a80-8163-66dc506136ea}</destination>
 		</relationship>
@@ -117,7 +120,10 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{885a1f45-ab91-4a80-8163-66dc506136ea}">
 		<relationship name="effects">
+			<destination>{927ce5fc-3894-4461-8cba-8d08f092e83f}</destination>
 			<destination>{99a2a84d-ba51-4993-9ddf-d8c5670ce4c1}</destination>
+			<destination>{790db9c4-4eb0-4432-bce8-2c2c5b1d2309}</destination>
+			<destination>{6dc9b9d1-1afe-4502-8c75-d0ac94c53ab8}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{058d935e-fa7e-48fe-a3b1-83bf377ef8c4}" />
@@ -137,7 +143,37 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{cb248eb0-65db-4dda-82a9-f1b736a203ce}" />
+	<object class="ThreeEQEffect" id="{927ce5fc-3894-4461-8cba-8d08f092e83f}">
+		<property name="lowGain">
+			<value>3.5</value>
+		</property>
+		<property name="midGain">
+			<value>-2</value>
+		</property>
+		<property name="highGain">
+			<value>-2</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{99a2a84d-ba51-4993-9ddf-d8c5670ce4c1}" />
+	<object class="MixerSend" id="{790db9c4-4eb0-4432-bce8-2c2c5b1d2309}">
+		<property name="level">
+			<value>0</value>
+		</property>
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{9f1e49fc-c769-4497-bfc9-35ddc9139381}</destination>
+		</relationship>
+	</object>
+	<object class="SFXReverbEffect" id="{6dc9b9d1-1afe-4502-8c75-d0ac94c53ab8}">
+		<property name="decayTime">
+			<value>350</value>
+		</property>
+		<property name="highCut">
+			<value>3800</value>
+		</property>
+	</object>
 	<object class="SingleSound" id="{b4f6fc32-e326-4e88-bc09-bb0ed5e567cb}">
 		<relationship name="audioFile">
 			<destination>{1260bdd3-a6ec-4361-8495-04e92bb3023e}</destination>

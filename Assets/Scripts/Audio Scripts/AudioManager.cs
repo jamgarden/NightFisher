@@ -8,9 +8,12 @@ public class AudioManager : MonoBehaviour
 {
     private List<EventInstance> eventInstances;
     private List<StudioEventEmitter> eventEmitters;
-    private EventInstance forestAmbienceEventInstance;
+    private EventInstance jetpackSpeedEventInstance;
     private EventInstance musicEventInstance;
     public static AudioManager instance { get; private set; }
+
+    [SerializeField] public string parameterName;
+    [SerializeField] public string parameterValue;
     
     private void Awake()
     {
@@ -26,14 +29,14 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        InitializeAmbience(FMODevents.instance.ForestAmbience);
+        InitializeJetpackSpeed(FMODevents.instance.jetpackSpeed);
         InitializeMusic(FMODevents.instance.ForestMusic);
     }
 
-    private void InitializeAmbience(EventReference forestAmbienceEventReference)
+    private void InitializeJetpackSpeed(EventReference jetpackSpeedEventReference)
     {
-        forestAmbienceEventInstance = CreateInstance(forestAmbienceEventReference);
-        forestAmbienceEventInstance.start();
+        jetpackSpeedEventInstance = CreateInstance(jetpackSpeedEventReference);
+        jetpackSpeedEventInstance.start();
     }
 
     private void InitializeMusic(EventReference musicEventReference)
@@ -42,7 +45,11 @@ public class AudioManager : MonoBehaviour
         musicEventInstance.start();
     }
 
-
+    public void SetJetpackSpeedParameter(string parameterName, float parameterValue)
+    {
+        jetpackSpeedEventInstance.setParameterByName(parameterName, parameterValue);
+    }
+    
 
     public void PlayOneShot(EventReference sound, Vector3 worldPos)
     {

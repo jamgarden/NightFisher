@@ -59,7 +59,7 @@
 			<destination>{44399258-4a41-400a-911d-f6b8f1cc6e0c}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{950dd02d-6f14-493e-aff1-7a0891c73133}</destination>
+			<destination>{a1dc7cde-4d08-4204-9626-487ac526ec04}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{17dffc00-fe6f-4fda-a731-ac8e6ab9cedf}" />
@@ -80,6 +80,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{3ababc3a-64da-4a5e-93c2-5f7273fc57ea}">
+		<property name="volume">
+			<value>6.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{67bae8a9-0ebb-41ec-a963-31ea457dbbd1}</destination>
 		</relationship>
@@ -117,7 +120,11 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{67bae8a9-0ebb-41ec-a963-31ea457dbbd1}">
 		<relationship name="effects">
+			<destination>{f243f642-6ae0-4b90-8649-a293c34ef279}</destination>
 			<destination>{3dbfdd0c-deaa-4b01-bf9c-92b8185b3f35}</destination>
+			<destination>{cebf9515-1bb8-4fa9-b712-aeb3dc810e82}</destination>
+			<destination>{feac867f-7211-4a71-8a84-381cd5503f2d}</destination>
+			<destination>{7b523859-6873-4eb2-b407-a9c6b290cc3b}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{2514bb5f-a006-4879-be56-79b1da5503ae}" />
@@ -137,7 +144,63 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ccca5860-c695-4f93-936f-225d58b16938}" />
+	<object class="ThreeEQEffect" id="{f243f642-6ae0-4b90-8649-a293c34ef279}">
+		<property name="lowGain">
+			<value>10</value>
+		</property>
+		<property name="midGain">
+			<value>-0.5</value>
+		</property>
+		<property name="highGain">
+			<value>-8.5</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{3dbfdd0c-deaa-4b01-bf9c-92b8185b3f35}" />
+	<object class="TremoloEffect" id="{cebf9515-1bb8-4fa9-b712-aeb3dc810e82}">
+		<property name="frequency">
+			<value>6.5</value>
+		</property>
+		<property name="depth">
+			<value>0.74000001</value>
+		</property>
+		<property name="shape">
+			<value>0.834999979</value>
+		</property>
+		<property name="skew">
+			<value>0.560000002</value>
+		</property>
+		<property name="duty">
+			<value>0.935000002</value>
+		</property>
+		<property name="phase">
+			<value>1</value>
+		</property>
+	</object>
+	<object class="DelayEffect" id="{feac867f-7211-4a71-8a84-381cd5503f2d}">
+		<property name="delay">
+			<value>36</value>
+		</property>
+		<property name="feedback">
+			<value>45.5</value>
+		</property>
+		<property name="level">
+			<value>-13</value>
+		</property>
+		<property name="dryLevel">
+			<value>-1</value>
+		</property>
+	</object>
+	<object class="MixerSend" id="{7b523859-6873-4eb2-b407-a9c6b290cc3b}">
+		<property name="level">
+			<value>-4.5</value>
+		</property>
+		<property name="inputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="mixerReturn">
+			<destination>{9f1e49fc-c769-4497-bfc9-35ddc9139381}</destination>
+		</relationship>
+	</object>
 	<object class="SingleSound" id="{a94235fa-a73a-40fe-af01-84400a7bd1f3}">
 		<relationship name="audioFile">
 			<destination>{06a1f5f9-d8ed-411a-abb6-7e1e2e156e0a}</destination>
