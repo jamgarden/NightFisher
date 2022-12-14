@@ -6991,13 +6991,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e0c07085fe903c42be266bd25b9d7ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <ForestAmbience>k__BackingField:
+  <jetpackSpeed>k__BackingField:
     Guid:
-      Data1: 2038306309
-      Data2: 1208025440
-      Data3: -1924252232
-      Data4: -1281452609
-    Path: event:/Ambience/Ambience_ForestAmbience
+      Data1: 1046747765
+      Data2: 1127397083
+      Data3: -1498295163
+      Data4: -787512632
+    Path: event:/JetpackSound
   <ForestMusic>k__BackingField:
     Guid:
       Data1: -2033219831
@@ -13664,6 +13664,10 @@ PrefabInstance:
       propertyPath: SprintSpeed
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 6275260830742920711, guid: b7ec44b5359c45744bbd1965e8a4cf2a, type: 3}
+      propertyPath: parameterName
+      value: JetpackSpeed
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: b7ec44b5359c45744bbd1965e8a4cf2a, type: 3}
@@ -15075,6 +15079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d92e549a869c246b99ada9f83afa6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parameterName: JetpackSpeedParameter
+  parameterValue: 25
 --- !u!4 &1792292126
 Transform:
   m_ObjectHideFlags: 0

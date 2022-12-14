@@ -190,6 +190,8 @@ MonoBehaviour:
   BottomClamp: -30
   CameraAngleOverride: 0
   LockCameraPosition: 0
+  parameterName: 
+  parameterValue: 1
 --- !u!114 &7292828519420468114
 MonoBehaviour:
   m_ObjectHideFlags: 0

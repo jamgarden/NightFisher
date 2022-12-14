@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using FMOD.Studio;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 #endif
@@ -110,6 +111,8 @@ namespace StarterAssets
 
         private bool _hasAnimator;
 
+        private EventInstance playerFootsteps;
+
         private bool IsCurrentDeviceMouse
         {
             get
@@ -134,6 +137,7 @@ namespace StarterAssets
 
         private void Start()
         {
+            playerFootsteps = AudioManager.instance.CreateInstance(FMODevents.instance.playerFootsteps);
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
             
             _hasAnimator = TryGetComponent(out _animator);
@@ -154,7 +158,10 @@ namespace StarterAssets
 
         private void Update()
         {
+
             _hasAnimator = TryGetComponent(out _animator);
+
+            
 
             JumpAndGravity();
             GroundedCheck();
@@ -222,6 +229,15 @@ namespace StarterAssets
             // if there is no input, set the target speed to 0
             if (_input.move == Vector2.zero) targetSpeed = 0.0f;
 
+            if (_input.move == Vector2.zero)
+            {
+                AudioManager.instance.SetJetpackSpeedParameter(parameterName, 0);
+            }
+            else 
+            {
+                AudioManager.instance.SetJetpackSpeedParameter(parameterName, _speed);
+            }
+
             // a reference to the players current horizontal velocity
             float currentHorizontalSpeed = new Vector3(_controller.velocity.x, 0.0f, _controller.velocity.z).magnitude;
 
@@ -239,9 +255,11 @@ namespace StarterAssets
 
                 // round speed to 3 decimal places
                 _speed = Mathf.Round(_speed * 1000f) / 1000f;
+                
             }
             else
             {
+                
                 _speed = targetSpeed;
             }
 
@@ -369,6 +387,9 @@ namespace StarterAssets
                 GroundedRadius);
         }
 
+    [field:SerializeField] public string parameterName;
+    [field:SerializeField] public float parameterValue;
+
         private void OnFootstep(AnimationEvent animationEvent)
         {
             if (animationEvent.animatorClipInfo.weight > 0.5f)
@@ -379,6 +400,13 @@ namespace StarterAssets
                     AudioSource.PlayClipAtPoint(FootstepAudioClips[index], transform.TransformPoint(_controller.center), FootstepAudioVolume);
                 }
             }
+
+            if (animationEvent.animatorClipInfo.weight > 0.5f)
+            {
+                
+                
+            }
+            
         }
 
         private void OnLand(AnimationEvent animationEvent)
