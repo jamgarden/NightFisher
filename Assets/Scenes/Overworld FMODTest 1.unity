@@ -6938,21 +6938,21 @@ MonoBehaviour:
       Data2: 1208025440
       Data3: -1924252232
       Data4: -1281452609
-    Path: event:/Ambience_ForestAmbience
+    Path: event:/Ambience/Ambience_ForestAmbience
   <ForestMusic>k__BackingField:
     Guid:
       Data1: -2033219831
       Data2: 1126325758
       Data3: 1661404292
       Data4: -1375189318
-    Path: event:/Music_Gameplay
+    Path: event:/Music/Music_Gameplay
   <bubbleShield>k__BackingField:
     Guid:
       Data1: 461045813
       Data2: 1285971901
       Data3: -1852205675
       Data4: 2081003543
-    Path: event:/SFX_Player_Abilities_ShieldActivate
+    Path: event:/Player FX/Abilities/SFX_Player_Abilities_ShieldActivate
   <playerFootsteps>k__BackingField:
     Guid:
       Data1: -419437922
@@ -6966,7 +6966,8 @@ MonoBehaviour:
       Data2: 1099996348
       Data3: -1562345806
       Data4: -486406040
-    Path: event:/FARTReal_Outdoor Close Up Rip 01_JATH_PLIB_Rode NTG 4 Plus
+    Path: event:/Test Sounds/Test FX/FARTReal_Outdoor Close Up Rip 01_JATH_PLIB_Rode
+      NTG 4 Plus
   <reflectShot>k__BackingField:
     Guid:
       Data1: 876541825
@@ -13516,6 +13517,10 @@ PrefabInstance:
     - target: {fileID: 3570384495124134197, guid: b7ec44b5359c45744bbd1965e8a4cf2a, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570384495124134197, guid: b7ec44b5359c45744bbd1965e8a4cf2a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3570384495124134197, guid: b7ec44b5359c45744bbd1965e8a4cf2a, type: 3}
       propertyPath: m_LocalRotation.y

@@ -3557,13 +3557,13 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -94068486
-      Data2: 1135598824
-      Data3: 1636983204
-      Data4: 432778008
-    Path: event:/Test Sounds/Test FX/UnlockSound
+      Data1: -959262656
+      Data2: 1118463235
+      Data3: 28070588
+      Data4: 2066787609
+    Path: event:/NPC FX/SFX_NPC_Sentinel_Death
   Event: 
-  PlayEvent: 0
+  PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -6938,35 +6938,35 @@ MonoBehaviour:
       Data2: 1208025440
       Data3: -1924252232
       Data4: -1281452609
-    Path: event:/Ambience_ForestAmbience
+    Path: event:/Ambience/Ambience_ForestAmbience
   <ForestMusic>k__BackingField:
     Guid:
       Data1: -2033219831
       Data2: 1126325758
       Data3: 1661404292
       Data4: -1375189318
-    Path: event:/Music_Gameplay
+    Path: event:/Music/Music_Gameplay
   <bubbleShield>k__BackingField:
     Guid:
       Data1: 461045813
       Data2: 1285971901
       Data3: -1852205675
       Data4: 2081003543
-    Path: event:/SFX_Player_Abilities_ShieldActivate
+    Path: event:/Player FX/Abilities/SFX_Player_Abilities_ShieldActivate
   <playerFootsteps>k__BackingField:
     Guid:
-      Data1: -419437922
-      Data2: 1129210247
-      Data3: -1045641046
-      Data4: -1967889435
-    Path: event:/AstaFootstep1
+      Data1: -1918131254
+      Data2: 1224577256
+      Data3: -22688870
+      Data4: -952221491
+    Path: event:/Player FX/Loco FX/SFX_Player_Locomotion_Footsteps_Basic
   <sentinalDeath>k__BackingField:
     Guid:
-      Data1: -182472827
-      Data2: 1099996348
-      Data3: -1562345806
-      Data4: -486406040
-    Path: event:/FARTReal_Outdoor Close Up Rip 01_JATH_PLIB_Rode NTG 4 Plus
+      Data1: -959262656
+      Data2: 1118463235
+      Data3: 28070588
+      Data4: 2066787609
+    Path: event:/NPC FX/SFX_NPC_Sentinel_Death
   <reflectShot>k__BackingField:
     Guid:
       Data1: 876541825
@@ -14471,6 +14471,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1720308655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4377561817154999288, guid: b7ec44b5359c45744bbd1965e8a4cf2a, type: 3}
+  m_PrefabInstance: {fileID: 1620530279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1720308657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720308655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -959262656
+      Data2: 1118463235
+      Data3: 28070588
+      Data4: 2066787609
+    Path: event:/NPC FX/SFX_NPC_Sentinel_Death
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 0
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1728324967
 PrefabInstance:
   m_ObjectHideFlags: 0
