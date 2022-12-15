@@ -78,6 +78,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{cf1110b8-df6f-4805-8a64-6d665ed32984}">
+		<property name="volume">
+			<value>-3</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{df031cb4-8ac8-4fbf-b9db-3ce1b8ccf7fa}</destination>
 		</relationship>
@@ -164,7 +167,7 @@
 	<object class="MixerBusFader" id="{fda4892a-2cd5-416b-aa82-ada497baeba1}" />
 	<object class="LowpassEffect" id="{0e73b8b7-f64e-4bb6-ad51-2a4dffa91d83}">
 		<property name="cutoff">
-			<value>1000</value>
+			<value>950</value>
 		</property>
 	</object>
 	<object class="AutomationCurve" id="{165f9577-60eb-47cf-a77b-a4e6be58cd9e}">
@@ -187,7 +190,7 @@
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>4</value>
+			<value>2.5</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{8e979c73-6509-42a7-a2eb-e829a700132f}">

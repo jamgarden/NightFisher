@@ -3622,7 +3622,7 @@ MonoBehaviour:
       Data4: 2066787609
     Path: event:/NPC FX/SFX_NPC_Sentinel_Death
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -3630,7 +3630,7 @@ MonoBehaviour:
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMaxDistance: 50
 --- !u!114 &435106663
 MonoBehaviour:
   m_ObjectHideFlags: 0
