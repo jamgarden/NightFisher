@@ -7000,11 +7000,11 @@ MonoBehaviour:
     Path: event:/JetpackSound
   <ForestMusic>k__BackingField:
     Guid:
-      Data1: -2033219831
-      Data2: 1126325758
-      Data3: 1661404292
-      Data4: -1375189318
-    Path: event:/Music/Music_Gameplay
+      Data1: 1322449546
+      Data2: 1099293163
+      Data3: 369838255
+      Data4: 958703739
+    Path: event:/Uncharted Planet Mix
   <bubbleShield>k__BackingField:
     Guid:
       Data1: 461045813
