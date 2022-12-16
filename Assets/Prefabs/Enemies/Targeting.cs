@@ -8,10 +8,7 @@ public class Targeting : MonoBehaviour
 
 
     public float reload = 2;
-    private float cooldown = 0;
     public bool targetAcquired = false;
-
-    
     public GameObject bullet;
 
     [SerializeField]
@@ -22,6 +19,8 @@ public class Targeting : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField]
     private string targetName = "PlayerCapsule";
+    
+
     void Start()
     {
         // gun = GetComponentInChildren<Transform>();
@@ -30,6 +29,7 @@ public class Targeting : MonoBehaviour
 
     private void OnTriggerEnter(Collider source)
     {
+        // Refactor to use source.gameObject.layer
         Debug.Log(source.gameObject.name);
         this.gameObject.GetComponent<SphereCollider>().enabled = false;
         if(source.gameObject.name == targetName)
@@ -46,7 +46,6 @@ public class Targeting : MonoBehaviour
     {
         // This function plays a warning sound before attacking.
         Debug.Log("Winding up");
-        // start making noises here.
         for (int i = 0; i < 4; i++)
         {
             yield return new WaitForSeconds(0.5f);
@@ -79,13 +78,6 @@ public class Targeting : MonoBehaviour
         this.transform.LookAt(correction.position, this.transform.up);
         GameObject bulletA = Instantiate(bullet, gun.position, this.transform.rotation) as GameObject; // Might need to use world space
         bulletA.GetComponent<BulletMB>().updateTarget(correction.gameObject);
-    }
-
-
-
-    private void Update()
-    {
-        // This had something in it, I swear.
     }
     
 }

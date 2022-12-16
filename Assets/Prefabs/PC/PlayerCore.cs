@@ -8,30 +8,25 @@ using Yarn.Unity;
 
 public class PlayerCore : MonoBehaviour
 {
-    public bool talkable = false;
-    public string targetNode = "";
-
     [SerializeField]
     private PlayerState playerState;
+    private DialogueRunner dialogueRunner;
+    private StarterAssets.StarterAssetsInputs controls; // Trying to disable controls, but having a time tracking
 
-    private StarterAssets.StarterAssetsInputs controls;
-    //public Movement moveControls;
+    public bool talkable = false;
+    public string targetNode = "";
     public GameObject dialogueHolder;
-    DialogueRunner dialogueRunner;
-    //private PlayerAttack attacker;
 
 
     private void Start()
     {
 
         controls = GetComponent<StarterAssets.StarterAssetsInputs>();
-        playerState.health = playerState.maxHealth;
-       // moveControls = GetComponent<Movement>();
-        //attacker = GetComponent<PlayerAttack>();
+        playerState.health = playerState.maxHealth; // If we have different scenes, this will heal our character every scene change.
         if (dialogueHolder != null)
         {
             dialogueRunner = dialogueHolder.GetComponent<DialogueRunner>();
-            dialogueRunner.onDialogueComplete.AddListener(DoneInteracting);
+            // dialogueRunner.onDialogueComplete.AddListener(DoneInteracting);
         }
         else
         {
@@ -39,25 +34,41 @@ public class PlayerCore : MonoBehaviour
         }
     }
 
-    // For keeping track of things like health and other instance specific things.
-    // Stat block here
 
+    // Public methods
     public void Damage(int damage)
     {
-        playerState.health--;
+        playerState.health -= damage;
         if(playerState.health < 1)
         {
             Die();
         }
     }
-    // Public methods here
+    
+
     public void Die()
     {
         Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("GameOver"); // Whisks us directly to the game over screen.
     }
 
-    void OnInteract()
+    public void ReleaseCursor()
+    {
+        // Needs to enable input
+        // Currently just releases control of the cursor.
+        
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void GrabCursor()
+    {
+        // Needs to Disable input
+        // Currently just lets us control the cursor
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    // Private Methods
+    private void OnInteract()
     {
 
         Debug.Log("OnInteract fired");
@@ -70,8 +81,6 @@ public class PlayerCore : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
                 dialogueRunner.Stop();
                 dialogueRunner.StartDialogue(targetNode);
-                //moveControls.canMove = false;
-                //attacker.canAttack = false;
                 talkable = false;
             }
             else
@@ -83,26 +92,6 @@ public class PlayerCore : MonoBehaviour
         {
             Debug.LogWarning("No Dialogue Runner to Start Talking");
         }
-    }
-
-    public void ReleaseCursor()
-    {
-        //Input
-        
-        Cursor.lockState = CursorLockMode.Locked;
-    }
-
-    public void GrabCursor()
-    {
-        // Disable input
-        // let us control the cursor
-        Cursor.lockState = CursorLockMode.None;
-    }
-
-    private void DoneInteracting()
-    {
-        //moveControls.canMove = true;
-        //attacker.canAttack = true;
     }
 
 
