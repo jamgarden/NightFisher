@@ -92,6 +92,13 @@ public class PlayerCore : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
+    public void GrabCursor()
+    {
+        // Disable input
+        // let us control the cursor
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     private void DoneInteracting()
     {
         //moveControls.canMove = true;

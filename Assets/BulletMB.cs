@@ -63,24 +63,28 @@ public class BulletMB : MonoBehaviour
         
         switch (other.gameObject.layer)
         {
-            case 8:
+            case 10: // Invincible targets are on layer 10
+                     // We don't need to do anything here!
+                break;
+            case 9: // bullets are on layer 9
+                // We don't need to do anything with this just yet. 
+                break;
+            case 8: // shield for 8
                 AudioManager.instance.PlayOneShot(FMODevents.instance.reflectShot, this.transform.position);
                 reflect();
                 break;
-            case 7:
+            case 7: // enemies for 7
                 AudioManager.instance.PlayOneShot(FMODevents.instance.sentinelDamaged, this.transform.position);
                 Debug.Log("I hit a bogey");
                 other.gameObject.GetComponent<EnemyCore>().Damage(baseDamage);
                 Destroy(this.gameObject);
                 break;
+            case 6: // Players for 6
+                Debug.Log("PlayerHit");
+                other.GetComponentInParent<PlayerCore>().Damage(baseDamage);
+                break;
             default:
                 break;
-        }
-        if(other.name == intendedTarget.name)
-        {
-            Debug.Log("OUCH");
-            Destroy(this.gameObject);
-            intendedTarget.GetComponentInParent<PlayerCore>().Damage(baseDamage); // Deal damage here.
         }
     }
 

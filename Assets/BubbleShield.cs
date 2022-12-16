@@ -40,6 +40,8 @@ public class BubbleShield : MonoBehaviour
     {
         if (!shielding)
         {
+            GameObject papa = GetComponentInParent<PlayerCore>().gameObject;
+            Debug.Log(papa.layer);
             AudioManager.instance.PlayOneShot(FMODevents.instance.bubbleShield, this.transform.position);
             shield.SetActive(true);
             shielding = true;

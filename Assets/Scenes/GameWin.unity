@@ -156,11 +156,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -94068486
-      Data2: 1135598824
-      Data3: 1636983204
-      Data4: 432778008
-    Path: event:/Test Sounds/Test FX/UnlockSound
+      Data1: -27821909
+      Data2: 1179379945
+      Data3: -1749250895
+      Data4: 68966760
+    Path: event:/Dialog/YarnDialogSwitcher
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -685,7 +685,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: u ded yo
+  m_text: u win yo!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
