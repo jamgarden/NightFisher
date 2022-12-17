@@ -15,8 +15,8 @@ public class InteractMB : MonoBehaviour
         if (collider.gameObject.name == PlayerObjectName)
         {
             PlayerCore player = collider.gameObject.GetComponentInParent<PlayerCore>();
-            player.talkable = true;
-            player.targetNode = this.targetNode;
+            player._talkable = true;
+            player._targetNode = this.targetNode;
         }
     }
 
@@ -26,8 +26,8 @@ public class InteractMB : MonoBehaviour
         if (collider.gameObject.name == PlayerObjectName)
         {
             PlayerCore player = collider.gameObject.GetComponentInParent<PlayerCore>();
-            player.talkable = false;
-            player.targetNode = "";
+            player._talkable = false;
+            player._targetNode = "";
         }
     }
 }

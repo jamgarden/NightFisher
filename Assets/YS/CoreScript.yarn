@@ -12,7 +12,7 @@ title: ActivatePortal
 ---
 You've activated the portal.
 // Need to... Oh.  I'll add my CURRENT location to a list of locations.  I've got an idea.
-
+<<log_teleporter PlayerCapsule>>
 ===
 title: Opening
 ---

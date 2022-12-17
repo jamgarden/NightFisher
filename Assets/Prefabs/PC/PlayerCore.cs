@@ -9,24 +9,33 @@ using Yarn.Unity;
 public class PlayerCore : MonoBehaviour
 {
     [SerializeField]
-    private PlayerState playerState;
-    private DialogueRunner dialogueRunner;
-    private StarterAssets.StarterAssetsInputs controls; // Trying to disable controls, but having a time tracking
+    private PlayerState _playerState;
+    [SerializeField]
+    private StoryState _storyState;
 
-    public bool talkable = false;
-    public string targetNode = "";
-    public GameObject dialogueHolder;
+    private DialogueRunner _dialogueRunner;
+    private StarterAssets.StarterAssetsInputs _controls; // Trying to disable _controls, but having a time tracking
+
+    public bool _talkable = false;
+    public string _targetNode = "";
+    public GameObject _dialogueHolder;
 
 
     private void Start()
     {
-
-        controls = GetComponent<StarterAssets.StarterAssetsInputs>();
-        playerState.health = playerState.maxHealth; // If we have different scenes, this will heal our character every scene change.
-        if (dialogueHolder != null)
+        // Editor Specific Code
+        if (Application.isEditor)
         {
-            dialogueRunner = dialogueHolder.GetComponent<DialogueRunner>();
-            // dialogueRunner.onDialogueComplete.AddListener(DoneInteracting);
+            _playerState.health = _playerState.maxHealth; // When in editor, initializes at the beginning of every scene. 
+            _storyState.Teleporters = new List<Vector3> { }; 
+        }
+        
+
+        _controls = GetComponent<StarterAssets.StarterAssetsInputs>();
+        if (_dialogueHolder != null)
+        {
+            _dialogueRunner = _dialogueHolder.GetComponent<DialogueRunner>();
+            // _dialogueRunner.onDialogueComplete.AddListener(DoneInteracting);
         }
         else
         {
@@ -38,8 +47,8 @@ public class PlayerCore : MonoBehaviour
     // Public methods
     public void Damage(int damage)
     {
-        playerState.health -= damage;
-        if(playerState.health < 1)
+        _playerState.health -= damage;
+        if(_playerState.health < 1)
         {
             Die();
         }
@@ -67,21 +76,26 @@ public class PlayerCore : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
     }
 
+    public void Teleport(Vector3 newPos)
+    {
+        this.transform.position = newPos;
+    }
+
     // Private Methods
     private void OnInteract()
     {
 
         Debug.Log("OnInteract fired");
 
-        if (talkable && dialogueRunner != null)
+        if (_talkable && _dialogueRunner != null)
         {
-            if (targetNode != "")
+            if (_targetNode != "")
             {
-                controls.StopAllCoroutines();
+                _controls.StopAllCoroutines();
                 Cursor.lockState = CursorLockMode.None;
-                dialogueRunner.Stop();
-                dialogueRunner.StartDialogue(targetNode);
-                talkable = false;
+                _dialogueRunner.Stop();
+                _dialogueRunner.StartDialogue(_targetNode);
+                _talkable = false;
             }
             else
             {
@@ -93,6 +107,8 @@ public class PlayerCore : MonoBehaviour
             Debug.LogWarning("No Dialogue Runner to Start Talking");
         }
     }
+
+    
 
 
     // Yarn Commands
@@ -106,6 +122,25 @@ public class PlayerCore : MonoBehaviour
         else
         {
             Debug.LogWarning("Scene " + roomName + " not in build.");
+        }
+    }
+
+    [YarnCommand("log_teleporter")]
+    private void LogTeleporter()
+    {
+        Debug.Log("Logging teleporter now at: " + this.transform.position);
+        if(_storyState.addTeleporter(this.transform) == false) // If adding a teleporter returns false, that means we already have it.  We will instead teleport to the next TP on the list.
+        {
+            // Get next teleporter.
+            Vector3 next = _storyState.nextTeleport(this.transform.position);
+            if(next == new Vector3(0,0,0))
+            {
+                Debug.Log("You ain't goin' anywhere");
+            }
+            else
+            {
+                Teleport(next);
+            }
         }
     }
 
